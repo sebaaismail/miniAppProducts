@@ -6,18 +6,18 @@
 
 /* Styles spécifiques pour les boutons */
 .button {
-    -fx-text-fill: grey;
-    -fx-font-weight: 600;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
     -fx-background-color: #db1f48;
 }
 
 .text-field {
     -fx-text-fill: black;
-    -fx-font-weight: 600;
+    -fx-font-weight: 700;
 }
 
 .button:hover {
-    -fx-background-color: #e5ddc8;
+    -fx-background-color: #E17055;
 }
 
 /* Styles pour la TableView */
@@ -48,7 +48,7 @@
 
 /* Couleur pour la ligne sélectionnée */
 .table-view .table-row-cell:selected {
-    -fx-background-color: #BFD7ED;
+    -fx-background-color: #0984e3;
 }
 
 /* Couleur de fond du BorderPane */
