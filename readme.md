@@ -40,7 +40,7 @@ Cette mini application JavaFX permet aux utilisateurs de gérer une liste de pro
 >     );
 
 
-vous pouvez egalement commencer par qulques data en la base de données:
+vous pouvez egalement commencer par qulques data dans la base de données:
 
 > `  
 INSERT INTO produits (nom, prix, quantite) VALUES  
@@ -51,13 +51,25 @@ INSERT INTO produits (nom, prix, quantite) VALUES
 ('Product E', 9.99, 150),  
 ('Product F', 25.00, 75);`
 
+
+N'oublie pas de configurer la base de données dans la classe `Database`
+Ma configuration est :
+
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/miniapptest_db?serverTimezone=UTC", "root", "admin");
+
+-   **Utilisateur**  :  `root`
+-   **Mot de passe**  :  `admin`
+
+Change ces identifiants selon ton serveur MySQL.
+
+
 ## c. Instructions pour exécuter l’application avec Maven
 
 1.  **Cloner le projet**  : Clonez le dépôt contenant le code source de l'application sur votre machine locale en utilisant la commande suivante :
 
 
 ```bash
-git clone <URL_DU_DEPOT_GIT>
+git clone https://github.com/sebaaismail/miniAppProducts
 ```
 Naviguer vers le répertoire du projet :
 
