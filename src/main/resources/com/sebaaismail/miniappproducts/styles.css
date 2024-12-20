@@ -1,0 +1,57 @@
+.label, .text-field, .button {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+/* Styles spécifiques pour les boutons */
+.button {
+    -fx-text-fill: grey;
+    -fx-font-weight: 600;
+    -fx-background-color: #db1f48;
+}
+
+.text-field {
+    -fx-text-fill: black;
+    -fx-font-weight: 600;
+}
+
+.button:hover {
+    -fx-background-color: #e5ddc8;
+}
+
+/* Styles pour la TableView */
+.table-view {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-font-weight: 600;
+}
+
+/* Styles pour l'en-tête de la TableView */
+.table-view .column-header {
+    -fx-background-color: #1758A8;
+    -fx-text-fill: black;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+}
+
+/* Couleur pour les lignes impaires */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #D3D3C4;
+}
+
+/* Couleur pour les lignes paires */
+.table-view .table-row-cell:even {
+    -fx-background-color: #FFFEF2;
+}
+
+/* Couleur pour la ligne sélectionnée */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #BFD7ED;
+}
+
+/* Couleur de fond du BorderPane */
+.root {
+    -fx-background-color: #0C1446;
+}
