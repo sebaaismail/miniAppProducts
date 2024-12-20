@@ -232,6 +232,8 @@ public class ProduitView {
         Alert alert = new Alert(Alert.AlertType.ERROR, message, ButtonType.OK);
         alert.setTitle(title);
         alert.setHeaderText(null);
+        alert.getDialogPane().getStylesheets().add(getClass().getResource("/com/sebaaismail/miniappproducts/styles.css").toExternalForm());
+
         alert.showAndWait();
     }
 }

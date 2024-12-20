@@ -164,4 +164,7 @@ La police **Poppins** est utilisée pour personnaliser l'apparence de l'applicat
 
 
 **Capture d'ecran pour l'interface:**
-![enter image description here](https://i.ibb.co/xfWCrqz/Capture.png)
+![enter image description here](https://i.ibb.co/Srf7Ym2/Capture.png)
+
+Validation d'erreurs:
+![enter image description here](https://i.ibb.co/QdZhNRN/Capture-erreur.pnghttps://i.ibb.co/Srf7Ym2/Capture.png)

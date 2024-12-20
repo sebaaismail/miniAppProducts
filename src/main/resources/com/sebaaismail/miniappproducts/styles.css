@@ -55,3 +55,16 @@
 .root {
     -fx-background-color: #0C1446;
 }
+
+.alert {
+    -fx-background-color: #f8d7da;
+}
+
+.alert .content {
+    -fx-font-size: 16px;
+    -fx-text-fill: red;
+}
+
+.alert .header {
+    -fx-font-size: 18px;
+}
