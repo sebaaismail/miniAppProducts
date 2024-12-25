@@ -13,7 +13,7 @@
 
 .text-field {
     -fx-text-fill: black;
-    -fx-font-weight: 700;
+    -fx-font-weight: 600;
 }
 
 .button:hover {
@@ -54,6 +54,7 @@
 /* Couleur de fond du BorderPane */
 .root {
     -fx-background-color: #0C1446;
+    -fx-background: #0C1446;
 }
 
 .alert {
@@ -67,4 +68,14 @@
 
 .alert .header {
     -fx-font-size: 18px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.products-form-grid-pane .label {
+ -fx-alignment: center-right;
+ -fx-min-width:150;
+ -fx-font-weight: 600;
 }

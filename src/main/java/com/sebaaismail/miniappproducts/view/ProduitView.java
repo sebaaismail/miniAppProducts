@@ -70,24 +70,24 @@ public class ProduitView {
         form.setPadding(new Insets(10));
 
         GridPane grid = new GridPane();
+        grid.getStyleClass().add("products-form-grid-pane");
         grid.setHgap(15);
         grid.setVgap(20);
         grid.setPadding(new Insets(15));
 
-        Label nomLabel = new Label("Nom du produit:");
+        Label nomLabel = new Label("Nom du produit");
 
         nomField = new TextField();
         nomField.prefWidthProperty().bind(grid.widthProperty().divide(3));
         nomField.setMinWidth(200);
-        nomField.setPromptText("Entrez le nom du produit");
+        //nomField.setPromptText("Entrez le nom du produit");
 
-        Label prixLabel = new Label("Prix:");
+        Label prixLabel = new Label("Prix");
+
         prixField = new TextField();
-        prixField.setPromptText("Entrez le prix");
 
-        Label quantiteLabel = new Label("Quantité:");
+        Label quantiteLabel = new Label("Quantité");
         quantiteField = new TextField();
-        quantiteField.setPromptText("Entrez la quantité");
 
         grid.add(nomLabel, 0, 0);
         grid.add(nomField, 1, 0);
@@ -97,7 +97,7 @@ public class ProduitView {
         grid.add(quantiteField, 1, 2);
 
         // Crée le bouton d'ajout
-        addButton = new Button("Ajouter au produit");
+        addButton = new Button("Ajouter");
         addButton.setMaxWidth(Double.MAX_VALUE); // Définit une largeur préférée pour le bouton
         addButton.setPrefHeight(40);
 
