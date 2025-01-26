@@ -124,6 +124,20 @@ public class ProduitView {
 
             TableColumn<Produit, String> nomColumn = new TableColumn<>("Nom");
             nomColumn.setCellValueFactory(new PropertyValueFactory<>("nom"));
+            nomColumn.setCellFactory(column -> new TableCell<Produit, String>() {
+                @Override
+                protected void updateItem(String item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (empty || item == null) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        setText(item);
+                        getStyleClass().add("important-cell");
+                    }
+                }
+            });
+
             nomColumn.setMinWidth(150);
 
             TableColumn<Produit, Double> prixColumn = new TableColumn<>("Prix");

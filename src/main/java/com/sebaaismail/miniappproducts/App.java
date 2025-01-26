@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
@@ -15,6 +16,8 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
+        Font.loadFont(App.class.getResourceAsStream("/fonts/Poppins-Regular.ttf"), 14);
+
         ProduitModel produitModel = new ProduitModel();
         ProduitView produitView = new ProduitView();
         ProduitController produitController = new ProduitController(produitModel, produitView);
